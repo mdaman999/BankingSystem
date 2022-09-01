@@ -1,0 +1,29 @@
+create database bank;
+
+create table account(
+username varchar(20) unique,
+name varchar(20),
+gender varchar(20),
+dob varchar(20),
+mob varchar(20),
+accno varchar(20),
+password varchar(20),
+ques varchar(50),
+ans varchar(50)
+);
+
+
+create table transaction(
+tranID int NOT NULL unique AUTO_INCREMENT,
+accno varchar(20),
+name varchar(20),
+ref varchar(20),
+dot varchar(20),
+deposit varchar(20),
+withdrow varchar(20),
+netbal varchar(30)
+);
+
+
+insert into account values("A001","admin","Male","+919997251726","MZN","12-07-1998","admin","First car","BMW");
+
